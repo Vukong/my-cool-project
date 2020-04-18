@@ -2,8 +2,10 @@ program   aaa
 implicit none
 integer win,key
 call gopen(400,400,win)
-call gclr(win)
 call gsetbgcolor(win,'white'//char(0))
+call gclr(win)
+call newcolor(win,'red'//char(0))
+call drawrect(win,0.,10.,50.,50.)
 call ggetch(key)
 call gclose(win)
 end
